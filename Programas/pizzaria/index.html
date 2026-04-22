@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaZé</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amatic+SC:wght@400;700&family=Coming+Soon&family=Fredericka+the+Great&family=Limelight&family=Lobster&family=Marck+Script&family=Niconne&family=Nosifer&family=Oi&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Pompiere&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pizza.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#pizzas">Pizzas</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#pedidos">Pedidos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <ul id="menu2">
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+        <a href="https://api.whatsapp.com/send?phone='41987855682'&text='Olá, gostaria de fazer um pedido!'" target="_blank">
+            <div class="logowhats"></div>
+        </a>
+    <header>
+        <section id="pizzaria">
+            <h1>PIZZA ZÉ</h1>
+            <h4>A melhor pizzaria de Curitiba</h4>
+            <p class="chamada">
+                <a href="#pedidos">Em cada fatia uma nova experiência, faça seu pedido</a>
+                <h2>Tel:(41) 707070-70</h2>
+            </p>
+        </section>
+    </header>
+    <section id="pizzas">
+        <div class="corpo">
+            <h3>Algumas opções para você!</h3>
+            <!-- <img class="pizzas" src="img/pizza1.jpg" alt="pizza"> -->
+        </div>
+        <div class="container">
+            <div class="container-pizza">
+                <div class ="container-pizza-img">
+                <img src="img/especial1.jpg" alt="pizza especial">
+            </div>
+            <p>Napolitana</p>
+            <p>Queijo mussarela, quatro queijos, orégano, tomate, molho de tomate</p>
+            <p>R$ 75,00</p>
+            </div>
+            <div class="container-pizza">
+                <div class="container-pizza-img">
+                <img src="img/especial2.jpg" alt="">
+            </div>
+            <p>Marguerita</p>
+            <p>Queijo mussarela, oregano, tomate, molho de tomate, manjericão</p>
+            <p>R$ 55,00</p>
+        </div>
+            <div class="container-pizza">
+                <div class="container-pizza-img">
+                <img src="img/especial3.jpg" alt="">
+            </div>
+            <p>Strogonoff</p>
+            <p>Queijo mussarela, cebola, carne, batata palha,  molho de tomate</p>
+            <p>R$ 65,00</p>
+        </div>
+            <div class="container-pizza">
+                <div class="container-pizza-img">
+                <img src="img/especial4.jpg" alt="pizza especial">
+            </div>
+            <p>Carne seca</p>
+            <p>Queijo mussarela, carne seca,  molho de tomate, tomate</p>
+            <p>R$ 70,00</p>
+            </div>
+        </div>
+    </div>
+    <section id="depoimentos">
+        <div class="container-dep">
+            <h2>Depoimentos</h2>
+                <div class="campodep">
+                <div class="cliente">
+                    <img src="img/perfil.jpg">
+                    <span>Angela Jacon</span>
+                <div class="estrelas">★★★★★</div>
+                </div>
+            <p>"Melhor pizzaria da região! Ingredientes frescos, massa perfeita e atendimento impecável."</p>
+                </div>
+        <div class="campodep2">
+            <div class="cliente">
+                <img src="img/perfil.jpg">
+                <span>Jean Michel</span>
+                <div class="estrelas">★★★★☆</div>
+            </div>
+            <p>"A Pizza Zé surpreendeu! Cada fatia é uma experiência de sabor."</p>
+        </div>
+        <div class="campodep">
+            <div class="cliente">
+                <img src="img/perfil.jpg">
+                <span>Pedro Augusto</span>
+                <div class="estrelas">★★★★★</div>
+            </div>
+                <p>"Pizza maravilhosa! A massa é leve e crocante, e o recheio vem bem caprichado. Dá pra sentir que os ingredientes são frescos. Com certeza virei cliente fiel!"</p>
+        </div>
+        <div class="campodep">
+            <div class="cliente">
+                <img src="img/perfil.jpg">
+                <span>Juliana Prado</span>
+                <div class="estrelas">★★★★☆</div>
+            </div>
+                <p>"Entrega rápida e pizza chegou quentinha! O sabor é incrível e o atendimento foi super atencioso. Recomendo demais para quem ama uma boa pizza!"</p>
+        </div>
+        </div>
+</section>
+    <section id="contato">
+        <h2>Formulário para contato:</h2>
+        <form class="formulario">
+            <input type="text" name="nome" placeholder="Digite seu nome" class="campo">
+            <input type="text" name="email" placeholder="Digite seu email" class="campo">
+            <input type="text" name="telefone" placeholder="Digite seu telefone" class="campo">
+            <input type="text" name="assunto" placeholder="Assunto" class="campo">
+            <textarea type="text" rows="7" name="mensagem" placeholder="Digite sua mensagem aqui" class="campo"></textarea>
+            <!-- textarea= campo com varias linhas -->
+            <input type="submit" value="Enviar" class="botao">
+        </form>
+    </section>
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.1186434161523!2d-45.78050452392841!3d-21.227143380472405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b59046842ddd57%3A0x7f69d9fc8868bb90!2sR.%20das%20Amoreiras%2C%20450%20-%20Jardim%20Bot%C3%A2nico%2C%20Campos%20Gerais%20-%20MG%2C%2037160-000!5e0!3m2!1spt-BR!2sbr!4v1773150057287!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p> Rua das Amoreiras, 450 - Bairro Jardim Alegre - Curitiba/PR</p>
+    </footer>
+</body>
+</html>

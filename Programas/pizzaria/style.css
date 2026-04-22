@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+nav{
+    width: 100%;
+    height: 6%;
+    background-color: #000000;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+    margin-top: 10px;
+}
+li a{
+    font-family: "Amatic SC", sans-serif;
+    color:#FFFFFF;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+li a:hover{
+    background-color: #D90404;
+    color: #ffffff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+h1{
+    font-family: "Nosifer", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 500%;
+    font-weight: 400;
+    text-shadow: 18px 18px 18px #000000;
+    padding-top: 10%;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/pizzacapa.jpg);
+    position: relative;
+    background-position: center center;
+    background-size: 100%;
+}
+h2,h3{
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 150%;
+    text-shadow: 18px 18px 18px #000000;
+    margin-top: 6%;
+    padding: 40px;
+}
+h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4em;
+    text-shadow: 48px 10px 38px #000000;
+    font-weight: 700;
+}
+h4,h5,h6{
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 350%;
+    text-shadow: 18px 10px 15px #000000;
+    font-weight: 200;
+    margin-top: 100px;
+}
+p{
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    color: #065902;
+    font-size: 150%;
+}
+.chamada{
+    margin-top: 50px;
+}
+.chamada > a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 110%;
+    padding: 10px 70px;
+    background-color: #065902;
+    border-radius: 50px; /* cantinho arredondado */
+    font-weight: 600;
+}
+.chamada > a:hover{
+    color: #ffffff;
+    background-color: #D90404;
+    transition: 0.2s;
+}
+/* para mexer na tag "#" e para mexer na class "." */
+#menu{
+    float: left;
+    margin-left: 700px;
+    margin-top: 8px;
+}
+#menu2{
+    float: right;
+    margin-top: 8px;
+}
+.logo{
+    width: 100px;
+    height: 52px;
+    float: left;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logowhats{
+    height: 85px;
+    width: 85px;
+    background-image: url(../img/whats.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 85%;
+    left: 92%;
+    z-index: 9999;
+}
+#pizzas{
+    background-color: #065902;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container-pizza{
+    width: 300px;
+    height: auto;
+    background-color: #074904;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 3px #EBC181;
+    overflow: hidden; /* esconde o que ultrapassar o container */
+    margin: 30px;
+}
+.container-pizza img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* para a imagem se encaixar no container */
+}
+.container-pizza p:nth-child(2){
+    font-family: "Amatic SC", sans-serif;
+    color: #ff0000;
+    font-size: 200%;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.container-pizza p:nth-child(3){
+    font-family: "Roboto Mono", monospace;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 0px 20px;
+    text-align: center;
+}
+.container-pizza p:nth-child(4){
+    font-family: "Pompiere", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 10px;
+}
+footer{
+    background-color: #000000;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center; /* alinhar na vertical */
+    justify-content: center; /* alinhar na horizontal */
+}
+footer p{
+    font-family: "Pompiere", sans-serif;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500px;
+    color: #FFFFFF;
+}
+#contato{
+    width: 100%;
+    min-height: 700px;
+    background-color: #D90404;
+    padding: 60px 0;
+}
+#contato h2{
+    font-size: 5em;
+    text-shadow: 30px 20px 20px #036800;
+    font-weight: 700;
+    color: #023100;
+}
+.formulario{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.campo{
+    font-family: "Roboto Mono", monospace;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px; /* canto arredondado */
+    border: #000000;
+}
+.botao{
+    width: 200px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+    border-radius: 15px;
+    border: #000000;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+.botao:hover{
+    background-color: #000000;
+    color: #f8f8f8;
+    transition: 0.2s;
+}
+#depoimentos{
+    width: 100%;
+    padding: 80px 20px;
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-dep h2{
+    font-size: 70px;
+    font-family: "Amatic SC", sans-serif;
+    color: #0a5c2d;
+    text-shadow: 2px 4px 10px #000000;
+    margin-bottom: 40px;
+}
+.container-dep{
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.campodep,
+.campodep2{
+    background: white;
+    border: 2px solid #0a5c2d;
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+.campodep:hover,
+.campodep2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #000000;
+}
+.cliente{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.cliente img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.cliente span{
+    font-weight: bold;
+    font-family: "Roboto Mono", monospace;
+    color: #333;
+}
+.container-dep p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+.estrelas{
+    color: #ffb400;
+    font-size: 18px;
+    margin-left: 5px;
+}
